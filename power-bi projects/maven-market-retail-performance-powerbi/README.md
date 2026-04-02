@@ -60,7 +60,7 @@ Maven Market operates grocery stores of varying sizes across North America. With
 - `product_name`, `brand`, `product_cost`, `product_retail_price`, `price_tier`
 - `store_country`, `store_city`, `store_sqft`, `grocery_sqft`
 
-> ⚠️ Due to confidentiality, only sample data is included in this repository.
+
 
 ---
 
@@ -146,7 +146,7 @@ Translated data patterns into actionable business insights covering revenue seas
 ![Executive Dashboard](screenshots/dashboard-overview.png)
 
 ### Regional Analysis Page
-![Key Metrics](screenshots/reginal-analysis.png)
+![Key Metrics](screenshots/regional-analysis.png)
 
 ### Product Detail Page
 ![Product Detail](screenshots/product-detail.png)
