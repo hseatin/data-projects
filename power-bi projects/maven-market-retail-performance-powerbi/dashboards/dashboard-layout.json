@@ -1,0 +1,95 @@
+{
+  "report": {
+    "name": "Maven Market Performance Dashboard",
+    "description": "Multi-National Grocery Chain Analytics",
+    "version": "1.0.0",
+    "author": "Hector Martin",
+    "tool": "Microsoft Power BI Desktop",
+    "pages": [
+      {
+        "id": 1,
+        "name": "Executive Dashboard",
+        "description": "High-level KPI overview: Revenue vs Target, Top Stores, Top Brands, Country Map",
+        "visuals": [
+          "KPI Card – Total Revenue",
+          "KPI Card – Total Profit",
+          "KPI Card – Total Cost",
+          "KPI Card – Total Orders",
+          "KPI Card – Returns",
+          "KPI Card – Return Rate %",
+          "Line & Clustered Column – Revenue vs Target",
+          "Filled Map – Revenue by Country",
+          "Bar Chart – Top 5 Stores by Revenue",
+          "Donut Chart – Top 5 Brands by Revenue",
+          "Table – Top 10 Products"
+        ]
+      },
+      {
+        "id": 2,
+        "name": "Regional Analysis",
+        "description": "Drill-down from Country to Region to Store with comparative performance metrics",
+        "visuals": [
+          "Matrix – Country / Region / Store hierarchy",
+          "Bar Chart – Revenue by Region",
+          "Map – Store locations",
+          "KPI Cards – Regional totals"
+        ]
+      },
+      {
+        "id": 3,
+        "name": "Product Detail",
+        "description": "Product-level revenue, profitability, return rates, dynamic KPI selector",
+        "visuals": [
+          "Line Chart – Revenue trend by product",
+          "Bar Chart – Top 5 Brands by Revenue and Profit",
+          "Donut Chart – Price Tier Performance",
+          "Table – Product detail with Orders, Cost, Revenue, Profit, Returns, Return %",
+          "Field Parameter slicer – Orders / Revenue / Profit / Cost / Returns / Return %"
+        ]
+      },
+      {
+        "id": 4,
+        "name": "Customer Detail",
+        "description": "Customer growth trends, demographic segmentation, top 50 customers",
+        "visuals": [
+          "KPI Card – Total Customers (Purchasers)",
+          "Sparkline – Customer trend",
+          "Line Chart – MoM Customer Growth %",
+          "Bar Chart – Revenue by Customer Type",
+          "Bar Chart – Revenue by Gender",
+          "Donut Chart – Revenue by Education Level",
+          "Donut Chart – Revenue by Age Group",
+          "Boxplot (Python/Seaborn) – Revenue distribution by Age Group",
+          "Table – Top 50 Customers by Revenue"
+        ]
+      },
+      {
+        "id": 5,
+        "name": "Time Intelligence",
+        "description": "YoY trends, MoM %, YTD, 60-Day Rolling Revenue, Weekend Analysis",
+        "visuals": [
+          "KPI Card – MTD Revenue",
+          "KPI Card – MTD Profit",
+          "KPI Card – MoM Growth %",
+          "KPI Card – MTD Orders",
+          "KPI Card – YTD Revenue",
+          "KPI Card – 60-Day Rolling Revenue",
+          "Line Chart – YoY Comparison (1997 vs 1998)",
+          "Line Chart – MoM Revenue %",
+          "Donut Chart – Weekend Revenue Analysis",
+          "Matrix – Date-level revenue with YTD and Revenue Target Gap"
+        ]
+      }
+    ],
+    "filters": [
+      "Country slicer",
+      "Store slicer",
+      "Year, Month slicer"
+    ],
+    "navigation": "Custom page navigation bar using bookmarks and buttons",
+    "python_visuals": [
+      "Heatmap – Revenue by Country vs Year/Month (Seaborn)",
+      "Boxplot – Revenue distribution by Age Group (Seaborn)"
+    ]
+  }
+}

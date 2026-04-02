@@ -1,0 +1,44 @@
+# Maven Market Retail Performance Analysis – .gitignore
+
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+.Python
+.env
+.venv
+env/
+venv/
+*.egg-info/
+dist/
+build/
+
+# Jupyter Notebooks
+.ipynb_checkpoints/
+*.ipynb_checkpoints
+
+# Data files (exclude sensitive/large raw data)
+data/raw/
+data/full_dataset.csv
+*.xlsx
+*.xls
+
+# Power BI temp files
+*.pbix.bak
+*.pbix.lock
+
+# OS files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# IDE / Editor
+.vscode/
+.idea/
+*.suo
+*.user
+
+# Logs
+*.log
+logs/
