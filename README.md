@@ -11,6 +11,7 @@ A curated collection of end-to-end data analytics and business intelligence proj
 ```
 data-projects/
 ├── power-bi projects/
+│   ├── energy-consumption-solar-production-powerbi/
 │   ├── adventure-works-sales-returns-powerbi/
 │   └── maven-market-retail-performance-powerbi/
 └── python projects/
@@ -25,7 +26,37 @@ Interactive, self-service Business Intelligence solutions built in Microsoft Pow
 
 ---
 
-### 1. Adventure Works — Sales & Returns BI Report
+### 1. Energy Consumption & Solar Production — Power BI Dashboard
+
+> **Tools:** Microsoft Power BI · DAX · Power Query · Python (Seaborn) · Meteostat API  
+> **Domain:** Residential Energy / Renewable Energy  
+> **Data Sources:** ESB · SolisCloud · Meteostat API
+
+**Overview**
+
+A complete end-to-end Power BI analytics solution for monitoring and optimising residential energy consumption, solar generation, battery performance, and electricity costs. By integrating grid electricity data from ESB, photovoltaic system performance from SolisCloud, and weather data from the Meteostat API, the solution provides a unified analytical platform to track energy flows, evaluate system efficiency, and identify cost-saving opportunities.
+
+**Business Problem**
+
+Data from energy providers, solar systems, and weather services is stored in separate systems with inconsistent formats, making it difficult to understand overall energy efficiency and financial impact. The project builds a centralised analytics solution to consolidate these sources and provide actionable insights across consumption, generation, and cost.
+
+**Key Features**
+
+- 9-page interactive dashboard: Energy Overview, Solar & Battery Performance, Grid Import vs Export, Cost & Revenue, Time Intelligence, Weather Impact, and more
+- Star Schema data model with 7 tables (3 fact, 4 dimension) for optimised performance
+- 30+ DAX measures across energy, financial, solar, battery, and weather categories
+- Python (Seaborn) heatmap embedded in Power BI for hourly import pattern analysis
+- Smart tariff segmentation (day vs. night rates) for accurate cost calculation
+- Time intelligence: MoM, YoY, YTD, and Rolling 12-Month trend analysis
+- Weather correlation analysis linking sunshine, temperature, and precipitation to energy performance
+
+**Stakeholders:** Residential energy consumers · Energy analysts · Renewable energy professionals
+
+🔗 [View Project](https://github.com/hseatin/data-projects/tree/main/power-bi%20projects/energy-consumption-solar-production-powerbi)
+
+---
+
+### 2. Adventure Works — Sales & Returns BI Report
 
 > **Tools:** Microsoft Power BI · DAX · Power Query  
 > **Domain:** Retail / Manufacturing  
@@ -53,7 +84,7 @@ Key business data was scattered across multiple disconnected source files, makin
 
 ---
 
-### 2. Maven Market — Retail Performance Dashboard
+### 3. Maven Market — Retail Performance Dashboard
 
 > **Tools:** Microsoft Power BI · DAX · Power Query  
 > **Domain:** Retail / Grocery  
@@ -135,6 +166,7 @@ Rising energy costs and growing adoption of residential solar systems create a g
 | Query & Modelling | DAX, Power Query (M) |
 | Programming | Python |
 | Data Manipulation | Pandas |
+| Data APIs | Meteostat API |
 | Reporting | Google Looker Studio |
 
 ---
