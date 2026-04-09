@@ -1,0 +1,12 @@
+DASHBOARD FILE NOT INCLUDED
+============================
+
+The Power BI dashboard file (.pbix) is not included in this repository due to:
+
+- File size limitations
+- Data privacy constraints (contains personally identifiable energy usage and financial data)
+
+Please contact the author for the full report file, or refer to the screenshots/ folder
+for visual previews of each dashboard page.
+
+Author: Hector Martin, Data Analyst, Ireland
